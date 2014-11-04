@@ -285,6 +285,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 80px;
 }
 
+#aboutwrap p, h2{
+  color: black;
+}
+
 .name {
 	text-align: center;
 }
@@ -374,12 +378,10 @@ h1, h2, h3, h4, h5, h6 {
 .deployed, .deployed a{
   margin-top: 10px;
   text-align: center;
-  font-size: 12px;
   color: black;
 }
 .github, .github a{
   text-align: center;
-  font-size: 12px;
   color: black;
 }
 
@@ -424,6 +426,18 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/portfolio-sep.jpg) no-repeat center top;
 }
 
+#skillswrap h1, i, h3{
+  color: black;
+}
+
+#skillswrap p{
+  color: black;
+}
+
+#skillsSection{
+  color: black;
+}
+
 /* Testimonials Wrap */
 #testimonials {
 	display: block;
@@ -452,10 +466,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/contact-sep.jpg);
 }
 
-small a{
-  color: white;
-}
-
 #contactpic{
   height: 1000px;
 }
@@ -463,6 +473,18 @@ small a{
 #contactwrap label {
 	color: #f2f2f2;
 	margin-top: 10px;
+}
+
+#contactwrap h3, p, div{
+  color: white;
+}
+
+#contactlinks a{
+  color: white;
+}
+
+#contactlinks i{
+  color: white;
 }
 
 
