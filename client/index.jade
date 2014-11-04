@@ -4,22 +4,194 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='assets/ico/favicon.ico')
     title Liza Carter
-    link(href='/public/css/index.css', rel='stylesheet')
-    link(href='../../public/vendor/bootstrap.min.css', rel='stylesheet')
-  body
-    h1 Welcome To Liza's Portfolio
-    .navbar.navbar-inverse
-      .navbar-header
-        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href='#') Home
-      ul.nav.navbar-nav.navbar-right
-        li
-          a(href='#') Portfolio
-        li
-          a(href='#') About
-        li
-          a(href='#') Contact
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    link(href='assets/css/style.css', rel='stylesheet')
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+    link(href='assets/js/fancybox/jquery.fancybox.css', rel='stylesheet')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+    // Menu
+    nav#theMenu.menu
+      .menu-wrap
+        h1.logo
+          a(href='index.html#home') Liza Carter
+        i.fa.fa-times.menu-close
+        a.smoothScroll(href='#home') Home
+        a.smoothScroll(href='#portfolio') Portfolio
+        a.smoothScroll(href='#about') About
+        a.smoothScroll(href='#contact') Contact
+        a(href='#')
+          i.fa.fa-envelope
+        a(href='#')
+          i.fa.fa-linkedin-square
+        a(href='#')
+          i.fa.fa-twitter
+        a(href='#')
+          i.fa.fa-instagram
+      // Menu button
+      #menuToggle
+        i.fa.fa-bars
+    section#home(name='home')
+    #headerwrap
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h1 LIZA CARTER
+
+    section#about(name='about')
+    #aboutwrap
+      .container
+        .row
+          .col-lg-4.name
+            img.img-responsive#profpic(src='assets/img/pic.png')
+            p LIZA CARTER
+            .name-label
+          .col-lg-8.name-desc
+            h2 WEB DEVELOPER IN NASHVILLE, TN
+            .name-zig
+            .col-md-6
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              p It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            .col-md-6
+              p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              p Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+    .sep.about(data-stellar-background-ratio='0.5')
+    section#portfolio(name='portfolio')
+    #portfoliowrap
+      .container
+        .row
+          h1 SOME OF MY PROJECTS
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port04.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port04.jpg', alt='')
+                  .overlay
+          // col-lg-4
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port05.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port05.jpg', alt='')
+                  .overlay
+          // col-lg-4
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port06.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port06.jpg', alt='')
+                  .overlay
+          // col-lg-4
+        // /row
+        .row.mt
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port01.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port01.jpg', alt='')
+                  .overlay
+          // col-lg-4
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port02.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port02.jpg', alt='')
+                  .overlay
+          // col-lg-4
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port03.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port03.jpg', alt='')
+                  .overlay
+          // col-lg-4
+        // /row
+      .container
+        .row.mt.centered
+          h1 SKILLS
+          .col-lg-4.proc
+            i.fa.fa-coffee
+            h3 The Meeting
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
+          .col-lg-4.proc
+            i.fa.fa-cogs
+            h3 The Ideas
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
+          .col-lg-4.proc
+            i.fa.fa-heart
+            h3 The Product
+            p
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
+    .sep.portfolio(data-stellar-background-ratio='0.5')
+
+    section#contact(name='contact')
+    .sep.contact(data-stellar-background-ratio='0.5')
+      img.img-responsive#contactpic(src='assets/img/contact-sep.jpg', alt='')
+    #contactwrap
+      .container
+        .row
+          .col-lg-6
+            p CONTACT ME
+            p
+              small
+                | 320 11th Ave S, #339
+                br
+                | Nashville, TN 37203
+
+            p
+              small
+                | 803.260.1774
+                br
+                | lizahcarter@gmail.com
+
+          .col-lg-6
+            form(role='form')
+              .form-group
+                label(for='exampleInputName1') Your Name
+                input#exampleInputEmail1.form-control(type='email', placeholder='Enter name')
+                label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+                label(for='exampleInputText1') Message
+                textarea.form-control(rows='3')
+              button.btn.btn-default(type='submit') Submit
+      // /container
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='assets/js/classie.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/smoothscroll.js')
+    script(src='assets/js/jquery.stellar.min.js')
+    script(src='assets/js/fancybox/jquery.fancybox.js')
+    script(src='assets/js/main.js')
+    script.
+      $(function(){
+      $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: 40
+      });
+      });
+    script(type='text/javascript').
+      $(function() {
+      //    fancybox
+      jQuery('.fancybox').fancybox();
+      });
