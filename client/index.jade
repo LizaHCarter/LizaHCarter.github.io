@@ -21,6 +21,7 @@ html(lang='en')
         i.fa.fa-times.menu-close
         a.smoothScroll(href='#home') Home
         a.smoothScroll(href='#portfolio') Portfolio
+        a.smoothScroll(href='#skills') Skills
         a.smoothScroll(href='#about') About
         a.smoothScroll(href='#contact') Contact
         a(href='#')
@@ -45,11 +46,11 @@ html(lang='en')
     #aboutwrap
       .container
         .row
-          .col-lg-4.name
+          .col-xs-4.name
             img.img-responsive#profpic(src='assets/img/pic.png')
             p LIZA CARTER
             .name-label
-          .col-lg-8.name-desc
+          .col-xs-8.name-desc
             h2 WEB DEVELOPER IN NASHVILLE, TN
             .name-zig
             .col-md-6
@@ -64,45 +65,11 @@ html(lang='en')
       .container
         .row
           h1 SOME OF MY PROJECTS
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href='assets/img/portfolio/port04.jpg')
-                      img.img-responsive(src='assets/img/portfolio/port04.jpg', alt='')
-                  .overlay
-          // col-lg-4
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href='assets/img/portfolio/port05.jpg')
-                      img.img-responsive(src='assets/img/portfolio/port05.jpg', alt='')
-                  .overlay
-          // col-lg-4
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href='assets/img/portfolio/port06.jpg')
-                      img.img-responsive(src='assets/img/portfolio/port06.jpg', alt='')
-                  .overlay
+
           // col-lg-4
         // /row
         .row.mt
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href='assets/img/portfolio/port01.jpg')
-                      img.img-responsive(src='assets/img/portfolio/port01.jpg', alt='')
-                  .overlay
-          // col-lg-4
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.desc
             .project-wrapper
               .project
                 .photo-wrapper
@@ -110,8 +77,31 @@ html(lang='en')
                     a.fancybox(href='assets/img/portfolio/port02.jpg')
                       img.img-responsive(src='assets/img/portfolio/port02.jpg', alt='')
                   .overlay
+                .deployed
+                  a(href='http://lizahcarter.github.io/mario/')
+                    i.fa.fa-play
+                .github
+                  a(href='http://github.com/lizahcarter/mario')
+                    i.fa.fa-code
+
           // col-lg-4
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port01.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port01.jpg', alt='')
+                  .overlay
+                .deployed
+                  a(href='http://lizahcarter.github.io/roundup/')
+                    i.fa.fa-play
+                .github
+                  a(href='http://github.com/lizahcarter/roundup')
+                    i.fa.fa-code
+          // col-lg-4
+        .row.mt
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.desc
             .project-wrapper
               .project
                 .photo-wrapper
@@ -119,27 +109,49 @@ html(lang='en')
                     a.fancybox(href='assets/img/portfolio/port03.jpg')
                       img.img-responsive(src='assets/img/portfolio/port03.jpg', alt='')
                   .overlay
-          // col-lg-4
-        // /row
+                .deployed
+                  a(href='http://play.google.com/store/apps/details?id=com.ionicframework.gpvirusgame730011&hl=en')
+                    i.fa.fa-play
+                .github
+                  a(href='http://github.com/LizaHCarter/gp-virus-game')
+                    i.fa.fa-code
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href='assets/img/portfolio/port04.jpg')
+                      img.img-responsive(src='assets/img/portfolio/port04.jpg', alt='')
+                  .overlay
+                .deployed
+                  a(href='#')
+                    i.fa.fa-play
+                .github
+                  a(href='http://github.com/LizaHCarter/lls-golf')
+                    i.fa.fa-code
+
+    .sep.portfolio(data-stellar-background-ratio='0.5')
+    section#skills(name='skills')
+    #skillswrap
       .container
         .row.mt.centered
           h1 SKILLS
-          .col-lg-4.proc
-            i.fa.fa-coffee
+          .col-md-4.proc
+            i.fa.fa-frown-o.fa-2x
             h3 MEAN Stack
             p
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
-          .col-lg-4.proc
-            i.fa.fa-cogs
+          .col-md-4.proc
+            i.fa.fa-mobile.fa-2x
             h3 Mobile Dev
             p
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
-          .col-lg-4.proc
-            i.fa.fa-heart
+          .col-md-4.proc
+            i.fa.fa-gamepad.fa-2x
             h3 Game Dev
             p
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever.
-    .sep.portfolio(data-stellar-background-ratio='0.5')
+    //.sep.skills(data-stellar-background-ratio='0.5')
 
     section#contact(name='contact')
     .sep.contact(data-stellar-background-ratio='0.5')
@@ -157,15 +169,20 @@ html(lang='en')
 
             p
               small
+                i.fa.fa-mobile &nbsp
                 | 803.260.1774
                 br
+                i.fa.fa-envelope &nbsp
                 | lizahcarter@gmail.com
                 br
-                | Blog
+                i.fa.fa-laptop &nbsp
+                a(href='https://medium.com/@Lazer_Tag') Blog
                 br
-                | LinkedIn
+                i.fa.fa-linkedin-square &nbsp
+                a(href='https://www.linkedin.com/pub/liza-carter/6a/7b3/8b2') LinkedIn
                 br
-                | Twitter
+                i.fa.fa-twitter-square &nbsp
+                a(href='https://twitter.com/LizaHCarter') Twitter
 
           .col-lg-6
             form(role='form')
