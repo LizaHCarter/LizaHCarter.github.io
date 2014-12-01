@@ -5,8 +5,9 @@ var port = process.env.PORT;
 
 var app = connect();
 
+
 app.use(morgan('dev'));
-app.use(serveStatic(__dirname));
+app.use(serveStatic('./'));
 
 app.listen(port);
 console.log('Node listening on port ' + port);

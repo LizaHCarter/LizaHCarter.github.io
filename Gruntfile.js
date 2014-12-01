@@ -6,6 +6,7 @@ module.exports = function(grunt){
     // ---------------------------------------------------------------------- //
     watch: {
       code: {
+        options: {livereload: true},
         files: ['Gruntfile.js', 'client/**/*'],
         tasks: ['build']
       }
@@ -28,15 +29,8 @@ module.exports = function(grunt){
       build: {
         files: [{
           cwd: 'client',
-          src: 'index.jade',
-          dest: './',
-          ext: '.html',
-          expand: true
-        },
-        {
-          cwd: 'client',
           src: '**/*.jade',
-          dest: 'public',
+          dest: './',
           ext: '.html',
           expand: true
         }]
@@ -48,7 +42,7 @@ module.exports = function(grunt){
         files: [{
           cwd: 'client',
           src: '**/*.less',
-          dest: 'public',
+          dest: './',
           ext: '.css',
           expand: true
         }]
@@ -56,7 +50,7 @@ module.exports = function(grunt){
     },
     // ---------------------------------------------------------------------- //
     clean: {
-      server: 'public'
+      server: './'
     },
     // ---------------------------------------------------------------------- //
     shell: {
@@ -69,19 +63,19 @@ module.exports = function(grunt){
       js: {
         cwd: 'client',
         src: ['**/*.js'],
-        dest: 'public',
+        dest: './',
         expand: true
       },
       assets: {
         cwd: 'client/assets',
         src: ['**/*'],
-        dest: 'public/assets',
+        dest: './assets',
         expand: true
       },
       favicon: {
         cwd: 'client',
         src: ['favicon.ico'],
-        dest: 'public',
+        dest: './',
         expand: true
       }
     }
